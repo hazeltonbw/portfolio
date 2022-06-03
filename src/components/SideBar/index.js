@@ -1,14 +1,24 @@
-import {} from "./SideBar";
-import { Link } from "react-router-dom";
+import { Logo, StyledNavLink } from "./SideBar";
+import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Nav, Home, About, Contact } from "./SideBar";
 const SideBar = () => {
   return (
-    <div className="nav-bar">
-      <Link className="logo" to="/">
-        {/* <img src="" alt="logo" /> */}
-        {/* TODO: Create logo image */}
+    <Nav>
+      <Logo to="/">
         <h1>Hazelton</h1>
-      </Link>
-    </div>
+      </Logo>
+      <Home exact="true" to="/">
+        <FontAwesomeIcon icon={faHome} color="#000000" />
+      </Home>
+      <About exact="true" to="/about">
+        <FontAwesomeIcon icon={faUser} color="#000000" />
+      </About>
+      <Contact exact="true" to="/contact">
+        <FontAwesomeIcon icon={faEnvelope} color="#000000" />
+      </Contact>
+    </Nav>
   );
 };
 

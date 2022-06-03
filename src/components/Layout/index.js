@@ -1,11 +1,11 @@
 import SideBar from "../SideBar";
-import {} from "./Layout";
+import { StyledLayout } from "./Layout";
 
 const Layout = () => {
   return (
-    <>
+    <StyledLayout>
       <SideBar />
-    </>
+    </StyledLayout>
   );
 };
 
