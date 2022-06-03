@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
-import { faBorderNone } from "@fortawesome/free-solid-svg-icons";
 
 export const Nav = styled.nav`
   background: #272727;
@@ -25,12 +24,7 @@ export const StyledNavLink = styled(NavLink)`
   align-items: center;
   justify-content: center;
   line-height: 22px;
-  color: #4d4d4e;
   text-decoration: none;
-
-  i {
-    transition: all 0.3s ease-out;
-  }
 
   &.active {
     svg {
@@ -77,6 +71,15 @@ export const About = styled(StyledNavLink)`
 export const Contact = styled(StyledNavLink)`
   &:after {
     content: "CONTACT";
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+`;
+
+export const Projects = styled(StyledNavLink)`
+  &:after {
+    content: "PROJECTS";
     opacity: 0;
     height: 0;
     width: 0;

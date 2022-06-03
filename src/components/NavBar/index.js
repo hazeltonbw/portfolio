@@ -1,8 +1,11 @@
-import { Logo, StyledNavLink } from "./SideBar";
-import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
-import { Nav, Home, About, Contact } from "./SideBar";
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
+import { Nav, Home, Logo, About, Contact, Projects } from "./NavBar";
 const SideBar = () => {
   return (
     <Nav>
@@ -15,6 +18,9 @@ const SideBar = () => {
       <About exact="true" to="/about">
         <FontAwesomeIcon icon={faUser} color="#000000" />
       </About>
+      <Projects exact="true" to="/projects">
+        <FontAwesomeIcon icon={faCode} color="#000000" />
+      </Projects>
       <Contact exact="true" to="/contact">
         <FontAwesomeIcon icon={faEnvelope} color="#000000" />
       </Contact>
