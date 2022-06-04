@@ -1,5 +1,4 @@
 import { Container } from "./Home";
-import Avatar from "avataaars";
 
 const Home = () => {
   return (
@@ -54,7 +53,13 @@ const Home = () => {
                   mask="url(#react-mask-10)"
                   fill="#65C9FF"
                 >
-                  <rect id="??Color" x="0" y="0" width="240" height="240"></rect>
+                  <rect
+                    id="??Color"
+                    x="0"
+                    y="0"
+                    width="240"
+                    height="240"
+                  ></rect>
                 </g>
               </g>
               <mask id="react-mask-11" fill="white">

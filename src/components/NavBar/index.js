@@ -1,29 +1,39 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faHome,
-  faUser,
-  faCode,
-} from "@fortawesome/free-solid-svg-icons";
-import { Nav, Home, Logo, About, Contact, Projects } from "./NavBar";
+import { Nav, Logo, HamburgerMenu, HamburgerLine } from "./NavBar";
+import { NavLink } from "react-router-dom";
 const SideBar = () => {
   return (
     <Nav>
-      <Logo to="/">
-        <h1>Hazelton</h1>
-      </Logo>
-      <Home exact="true" to="/">
-        <FontAwesomeIcon icon={faHome} color="#000000" />
-      </Home>
-      <About exact="true" to="/about">
-        <FontAwesomeIcon icon={faUser} color="#000000" />
-      </About>
-      <Projects exact="true" to="/projects">
-        <FontAwesomeIcon icon={faCode} color="#000000" />
-      </Projects>
-      <Contact exact="true" to="/contact">
-        <FontAwesomeIcon icon={faEnvelope} color="#000000" />
-      </Contact>
+      <h1>
+        <Logo to="/">Hazelton</Logo>
+      </h1>
+      <ul className="menu">
+        <li>
+          <NavLink exact="true" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact="true" to="/about">
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact="true" to="/projects">
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact="true" to="/contact">
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <input class="checkbox" type="checkbox" />
+      <HamburgerMenu>
+        <HamburgerLine />
+        <HamburgerLine />
+        <HamburgerLine />
+      </HamburgerMenu>
     </Nav>
   );
 };

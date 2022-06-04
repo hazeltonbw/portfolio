@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledLayout = styled.div`
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 1rem 2rem;
+  margin: 0 auto;
 `;

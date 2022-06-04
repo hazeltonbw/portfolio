@@ -1,87 +1,84 @@
 import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+export const HamburgerMenu = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 1.25rem;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const HamburgerLine = styled.span`
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+`;
 
 export const Nav = styled.nav`
   background: #272727;
-  width: 140px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  padding: 0 1.25rem;
+  justify-content: space-between;
+
+  ul {
+    display: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+  }
+
+  li {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    color: inherit;
+  }
+
+  .active svg {
+    color: red;
+  }
+
+  .checkbox {
+    height: 34px;
+    width: 34px;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    top: 0px;
+    right: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .checkbox,
+    ${HamburgerMenu} {
+      display: none;
+    }
+
+    & {
+      display: flex;
+    }
+    ul {
+      display: flex;
+    }
+  }
 `;
+
 export const Logo = styled(Link)`
   text-decoration: none;
   color: inherit;
-`;
-
-export const StyledNavLink = styled(NavLink)`
-  height: 50px;
-  width: 100%;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 22px;
-  text-decoration: none;
-
-  &.active {
-    svg {
-      color: red;
-    }
-  }
-  &:hover {
-    svg {
-      opacity: 0;
-      height: 0;
-      width: 0;
-    }
-
-    &:after {
-      opacity: 1;
-      width: auto;
-      height: auto;
-      transition: all 0.3s ease-out;
-    }
-  }
-
-  &:after {
-    content: "";
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-`;
-export const Home = styled(StyledNavLink)`
-  &:after {
-    content: "HOME";
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-`;
-export const About = styled(StyledNavLink)`
-  &:after {
-    content: "ABOUT";
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-`;
-export const Contact = styled(StyledNavLink)`
-  &:after {
-    content: "CONTACT";
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-`;
-
-export const Projects = styled(StyledNavLink)`
-  &:after {
-    content: "PROJECTS";
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
+  text-transform: uppercase;
+  font-weight: 700;
 `;
