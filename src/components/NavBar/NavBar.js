@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const HamburgerMenu = styled.div`
   position: absolute;
   top: 0px;
-  right: 1.25rem;
+  right: 0;
   height: 26px;
   width: 32px;
   display: flex;
@@ -13,6 +13,7 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const HamburgerLine = styled.span`
+  transition: all 0.3s ease-out;
   height: 4px;
   width: 100%;
   border-radius: 10px;
@@ -22,7 +23,6 @@ export const HamburgerLine = styled.span`
 export const Nav = styled.nav`
   background: #272727;
   position: relative;
-  padding: 0 1.25rem;
   justify-content: space-between;
 
   ul {
@@ -42,7 +42,6 @@ export const Nav = styled.nav`
   a {
     text-decoration: none;
     display: inline-block;
-    width: 100%;
     color: inherit;
   }
 
@@ -58,7 +57,45 @@ export const Nav = styled.nav`
     cursor: pointer;
     z-index: 2;
     top: 0px;
-    right: 1.25rem;
+    right: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  .checkbox:checked ~ ${HamburgerMenu} ${HamburgerLine}:nth-child(1) {
+    position: absolute;
+    transform: rotate(135deg);
+    top: 10px;
+  }
+  .checkbox:checked ~ ${HamburgerMenu} ${HamburgerLine}:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  .checkbox:checked ~ ${HamburgerMenu} ${HamburgerLine}:nth-child(3) {
+    transform: scaleY(0);
+  }
+
+  .checkbox:checked ~ .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    color: black;
+  }
+  .checkbox:checked ~ ul li {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .checkbox:checked ~ ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: 640px) {
@@ -70,7 +107,12 @@ export const Nav = styled.nav`
     & {
       display: flex;
     }
-    ul {
+
+    .checkbox {
+      display: none;
+    }
+
+    .menu {
       display: flex;
     }
   }

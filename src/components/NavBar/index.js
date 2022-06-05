@@ -6,6 +6,12 @@ const SideBar = () => {
       <h1>
         <Logo to="/">Hazelton</Logo>
       </h1>
+      <input class="checkbox" type="checkbox" />
+      <HamburgerMenu>
+        <HamburgerLine />
+        <HamburgerLine />
+        <HamburgerLine />
+      </HamburgerMenu>
       <ul className="menu">
         <li>
           <NavLink exact="true" to="/">
@@ -28,12 +34,6 @@ const SideBar = () => {
           </NavLink>
         </li>
       </ul>
-      <input class="checkbox" type="checkbox" />
-      <HamburgerMenu>
-        <HamburgerLine />
-        <HamburgerLine />
-        <HamburgerLine />
-      </HamburgerMenu>
     </Nav>
   );
 };

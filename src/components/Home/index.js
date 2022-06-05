@@ -333,7 +333,13 @@ const Home = () => {
           </g>
         </g>
       </svg>
-      <h1>My name is Brandon, and I'm a Front-end Developer.</h1>
+      <h1
+        style={{
+          maxWidth: "25ch",
+        }}
+      >
+        My name is Brandon, and I'm a Front-end Developer.
+      </h1>
     </Container>
   );
 };
