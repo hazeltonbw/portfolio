@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export const HamburgerMenu = styled.div`
   position: absolute;
-  top: 0px;
+  top: 4px;
   right: 0;
-  height: 26px;
-  width: 32px;
+  height: 20px;
+  width: 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,11 +27,11 @@ export const Nav = styled.nav`
 
   ul {
     display: none;
-    gap: 10px;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
     text-align: center;
+    transition: all 1s ease-out;
   }
 
   li {
@@ -56,8 +56,8 @@ export const Nav = styled.nav`
     position: absolute;
     cursor: pointer;
     z-index: 2;
-    top: 0px;
-    right: 0;
+    top: -3px;
+    right: -3px;
     transition: all 0.3s ease-out;
   }
 
@@ -84,24 +84,35 @@ export const Nav = styled.nav`
     height: 100vh;
     width: 100%;
     color: black;
+    justify-content: flex-start;
   }
+
+  .checkbox:checked ~ ul {
+    justify-content: center;
+  }
+
   .checkbox:checked ~ ul li {
-    max-width: 100%;
-    height: 100%;
+    height: 5rem;
+    max-width: unset;
   }
 
   .checkbox:checked ~ ul li a {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
   }
 
   @media (min-width: 640px) {
     .checkbox,
     ${HamburgerMenu} {
       display: none;
+    }
+
+    ul {
+      gap: 20px;
     }
 
     & {

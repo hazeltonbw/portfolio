@@ -338,7 +338,7 @@ const Home = () => {
           maxWidth: "25ch",
         }}
       >
-        My name is Brandon, and I'm a Front-end Developer.
+        My name is Brandon, and I'm a <em>Full Stack Developer</em>.
       </h1>
     </Container>
   );
