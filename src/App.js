@@ -1,7 +1,13 @@
 import "./App.scss";
+import { Navigation } from "./components/Navigation";
+import { FlexContainer } from "./styled/StyledComponents";
 
 function App() {
-  return <div>hi</div>;
+  return (
+    <FlexContainer>
+      <Navigation />
+    </FlexContainer>
+  );
 }
 
 export default App;
