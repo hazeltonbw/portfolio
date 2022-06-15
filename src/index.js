@@ -4,12 +4,17 @@ import App from "./App";
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./styled/theme";
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>
 );

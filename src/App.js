@@ -1,12 +1,14 @@
 import "./App.scss";
+import { Home } from "./components/Home";
 import { Navigation } from "./components/Navigation";
-import { FlexContainer } from "./styled/StyledComponents";
+import { MainContainer } from "./styled/StyledComponents";
 
 function App() {
   return (
-    <FlexContainer>
+    <MainContainer>
       <Navigation />
-    </FlexContainer>
+      <Home />
+    </MainContainer>
   );
 }
 
