@@ -1,16 +1,9 @@
 import styled from "styled-components";
 
-export const Flex = styled.div`
-  display: flex;
-  height: calc(100vh - 5rem);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const Hero = styled.div`
   @media (max-width: 1024px) {
     display: flex;
+    gap: 10px;
     flex-direction: column-reverse;
     align-items: center;
     img {
@@ -28,7 +21,13 @@ export const Hero = styled.div`
     grid-column: 4 / span 1;
   }
 `;
-
+export const Flex = styled.div`
+  display: flex;
+  height: calc(100vh - 5rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 export const Card = styled.div`
   grid-column: 1 / span 3;
   grid-row: 1 / span 2;
