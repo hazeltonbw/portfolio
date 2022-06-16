@@ -26,12 +26,14 @@ export const burgerStyles = {
     height: "100%",
   },
   bmMenu: {
-    background: "#373a47",
+    background: "rgb(50,50,50)",
+    width: "100%",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
+    borderRadius: ".5rem",
   },
   bmMorphShape: {
-    fill: "#373a47",
+    fill: "rgba(39,39,39, 0.5)",
   },
   bmItemList: {
     color: "#b8b7ad",

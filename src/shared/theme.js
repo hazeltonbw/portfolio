@@ -1,6 +1,6 @@
 export const theme = {
   backgroundColor: "#272727",
-  footerBackgroundColor: "#323232",
+  secondaryBackgroundColor: "#323232",
   linkColors: "#518dff",
   color: "#fff",
   fsxl: "clamp(2rem, 9vw - 1rem, 8rem)",

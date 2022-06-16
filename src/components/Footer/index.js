@@ -1,6 +1,6 @@
 import { StyledFooter } from "./Footer";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Logo } from "../../shared/StyledComponents";
+import { Logo, Flex } from "../../shared/StyledComponents";
 const Footer = () => {
   return (
     <StyledFooter>
@@ -15,9 +15,6 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <Logo href="#">H</Logo>
-        </li>
-        <li>
           <a
             href="https://www.linkedin.com/in/hazeltonbw/"
             target="_blank"
@@ -27,7 +24,10 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      &copy; {new Date().getFullYear()} Brandon Hazelton
+      <Flex>
+        <Logo href="#">H</Logo>
+        <span>&copy; {new Date().getFullYear()} Brandon Hazelton</span>
+      </Flex>
     </StyledFooter>
   );
 };
