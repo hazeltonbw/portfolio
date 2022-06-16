@@ -23,7 +23,7 @@ export const Hero = styled.div`
 `;
 export const Flex = styled.div`
   display: flex;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 4rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,5 +56,11 @@ export const Card = styled.div`
     padding: ${({ theme }) => theme.aPadding};
     background: #518dff;
     font-weight: 300;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover,
+  a:focus {
+    transform: scale(1.15);
   }
 `;

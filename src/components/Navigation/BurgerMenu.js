@@ -6,7 +6,7 @@ export const burgerStyles = {
     width: "36px",
     height: "30px",
     right: "39px",
-    top: "30px",
+    top: "17px",
   },
   bmBurgerBars: {
     background: "#518dff",

@@ -6,4 +6,10 @@ body {
   background-color: #272727;
   color: white;
   font-family: "Zilla Slab", serif;
+  scroll-behavior: smooth;
+
+  /* scroll-padding-top accounts for sticky navigation size. It will scroll the desired amount
+   * extra to line up div's perfectly
+   * */ 
+  scroll-padding-top: 4rem;
 }
