@@ -1,7 +1,7 @@
 import { Flex, Hero, Card } from "./Home";
 import avatar from "../../assets/img/avatar-transparent.svg";
 
-export const Home = () => {
+const Home = () => {
   return (
     <Flex>
       <Hero>
@@ -18,3 +18,4 @@ export const Home = () => {
     </Flex>
   );
 };
+export default Home;

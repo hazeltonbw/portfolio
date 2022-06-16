@@ -1,5 +1,6 @@
 export const theme = {
-  background: "#518dff",
+  background: "#272727",
+  linkColors: "#518dff",
   color: "#fff",
   fsxl: "clamp(2rem, 9vw - 1rem, 8rem)",
   fsl: "3rem",
