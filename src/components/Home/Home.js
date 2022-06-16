@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  @media (max-width: 1024px) {
+  @media (max-width: 648px) {
     display: flex;
     gap: 10px;
     flex-direction: column-reverse;

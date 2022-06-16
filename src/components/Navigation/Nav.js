@@ -1,9 +1,5 @@
 import styled from "styled-components";
-
-export const HomeLink = styled.a`
-  font-family: "Marck Script", cursive;
-  user-select: none;
-`;
+import { Logo } from "../../shared/StyledComponents";
 
 export const Nav = styled.nav`
   position: sticky;
@@ -59,7 +55,7 @@ export const Nav = styled.nav`
     transform-origin: 0 50%;
   }
 
-  ${HomeLink} {
+  ${Logo} {
     color: ${({ theme }) => theme.linkColors};
     font-size: 3rem;
   }

@@ -1,4 +1,5 @@
-import { Nav, HomeLink } from "./Nav";
+import { Nav } from "./Nav";
+import { Logo } from "../../shared/StyledComponents";
 import { Menu, burgerStyles, MenuWrapper } from "./BurgerMenu";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -24,7 +25,7 @@ const Navigation = () => {
 
   return (
     <Nav navBarScroll={navBarScroll}>
-      <HomeLink href="#">H</HomeLink>
+      <Logo href="#">H</Logo>
       <ul>
         <li>
           <a href="#" className={isActive("")}>

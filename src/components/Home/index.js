@@ -1,5 +1,6 @@
 import { Flex, Hero, Card } from "./Home";
 import avatar from "../../assets/img/avatar-transparent.svg";
+import { BsArrow90DegRight, BsArrowDown, BsArrowRight } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -11,7 +12,10 @@ const Home = () => {
             <strong>Brandon Hazelton</strong>.
           </h1>
           <h1>I am a full-stack web developer.</h1>
-          <a href="#projects">Learn more</a>
+          <a href="#about">
+            Learn more &nbsp;
+            <BsArrowRight style={{ verticalAlign: "bottom" }} />
+          </a>
         </Card>
         <img src={avatar} alt="avatar" />
       </Hero>
