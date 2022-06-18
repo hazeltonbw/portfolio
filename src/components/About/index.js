@@ -1,13 +1,14 @@
 import initialBackground from "../../assets/img/initial-background.svg";
-import { Flex } from "./About";
+import { Flex, InitialBackground } from "./About";
 const About = () => {
   return (
-    <Flex pic={initialBackground} id="about">
-      lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
-      consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum
-      dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur
-      adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit
-      amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip
+    <Flex id="about">
+      <InitialBackground pic={initialBackground}></InitialBackground>
+      <h1>About</h1>
+      <p>
+        lorem ipsum dolor sit amet, consectetur adipis, lorem ipsum dolor sit
+        amet, consectetur adip
+      </p>
     </Flex>
   );
 };
