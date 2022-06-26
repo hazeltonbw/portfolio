@@ -57,7 +57,7 @@ export const Nav = styled.nav`
 
   ${Logo} {
     color: ${({ theme }) => theme.linkColors};
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   @media (max-width: 640px) {
