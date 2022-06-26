@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   transition: all 0.3s ease-in-out;
   background-color: ${(props) =>
     props.navBarScroll === true ? "#323232" : "#272727"};
@@ -57,7 +57,7 @@ export const Nav = styled.nav`
 
   ${Logo} {
     color: ${({ theme }) => theme.linkColors};
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   @media (max-width: 640px) {

@@ -28,6 +28,7 @@ const Navigation = () => {
       <Logo href="#">H</Logo>
       <ul>
         <li>
+          {/* TODO: Change to default website URL when website is up */}
           <a href="#" className={isActive("")}>
             Home
           </a>
@@ -50,6 +51,7 @@ const Navigation = () => {
       </ul>
       <MenuWrapper>
         <Menu id={"burger-menu"} right styles={burgerStyles}>
+          {/* TODO: Change to default website URL when website is up */}
           <a href="#" className={isActive("")}>
             Home
           </a>

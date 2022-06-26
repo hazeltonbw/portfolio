@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  @media (max-width: 648px) {
+  @media (max-width: 640px) {
     display: flex;
     gap: 10px;
     flex-direction: column-reverse;
@@ -10,6 +10,7 @@ export const Hero = styled.div`
       max-width: 20em;
     }
   }
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -17,13 +18,14 @@ export const Hero = styled.div`
 
   img {
     width: 100%;
+    max-height: 250px;
     grid-row: 1 / span 2;
     grid-column: 4 / span 1;
   }
 `;
 export const Flex = styled.div`
   display: flex;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 3rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
