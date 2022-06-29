@@ -33,6 +33,11 @@ const About = () => {
               <FaLinkedin title="Linkedin link" size="2em" />
             </a>
           </li>
+          <li>
+            <a href="#projects" className="projects">
+              View Projects
+            </a>
+          </li>
         </ul>
       </div>
     </Flex>

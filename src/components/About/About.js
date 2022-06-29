@@ -18,11 +18,41 @@ export const Flex = styled.div`
 
   h1 {
     font-size: 3rem;
-    text-decoration: underline;
   }
 
   p {
     max-width: 35ch;
+  }
+
+  .projects {
+    border: none;
+    text-decoration: none;
+    color: #272727;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 15px;
+    background: #518dff;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 1rem;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  ul li svg {
+    color: white;
+    stroke: white;
+    fill: white;
+    display: flex;
   }
 
   @media (max-width: 640px) {
