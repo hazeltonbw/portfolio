@@ -30,7 +30,6 @@ export const Flex = styled.div`
     color: #272727;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    width: 100%;
     background: #518dff;
     font-weight: 300;
     transition: all 0.3s ease-in-out;
@@ -42,6 +41,15 @@ export const Flex = styled.div`
       color: black;
       fill: black;
     }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      color: white;
+      svg {
+        fill: white;
+      }
+    }
   }
 
   ul {
@@ -51,7 +59,7 @@ export const Flex = styled.div`
     row-gap: 1rem;
     justify-content: flex-start;
     list-style: none;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     align-items: center;
   }
 
@@ -60,6 +68,12 @@ export const Flex = styled.div`
     stroke: white;
     fill: #518dff;
     display: flex;
+    transition: all 0.3s ease-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.15);
+      fill: white;
+    }
   }
 
   @media (max-width: 640px) {
