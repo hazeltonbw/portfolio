@@ -17,7 +17,7 @@ export const StyledFooter = styled.footer`
   }
 
   a {
-    color: inherit;
+    color: #518dff;
     text-decoration: none;
   }
 `;

@@ -31,10 +31,17 @@ export const Flex = styled.div`
     border-radius: 0.5rem;
     padding: 0.5rem;
     width: 100%;
-    margin-top: 15px;
     background: #518dff;
     font-weight: 300;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+
+    svg {
+      color: black;
+      fill: black;
+    }
   }
 
   ul {
@@ -51,7 +58,7 @@ export const Flex = styled.div`
   ul li svg {
     color: white;
     stroke: white;
-    fill: white;
+    fill: #518dff;
     display: flex;
   }
 

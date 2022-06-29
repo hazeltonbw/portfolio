@@ -1,6 +1,7 @@
 import initialBackground from "../../assets/img/test.png";
 import { Flex, InitialBackground } from "./About";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsArrow90DegRight, BsArrowDown, BsArrowRight } from "react-icons/bs";
 const About = () => {
   return (
     <Flex id="about">
@@ -36,6 +37,7 @@ const About = () => {
           <li>
             <a href="#projects" className="projects">
               View Projects
+              <BsArrowRight />
             </a>
           </li>
         </ul>
