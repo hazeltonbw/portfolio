@@ -6,7 +6,7 @@ export const Flex = styled.div`
   align-items: center;
   justify-content: center;
   column-gap: 1rem;
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 5rem);
   padding: 1rem 2rem;
 
   .about-text {
@@ -17,11 +17,12 @@ export const Flex = styled.div`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: ${({ theme }) => theme.fsxl};
   }
 
   p {
     max-width: 35ch;
+    font-size: ${({ theme }) => theme.fsm};
   }
 
   .projects {
@@ -31,24 +32,19 @@ export const Flex = styled.div`
     border-radius: 0.5rem;
     padding: 0.5rem;
     background: #518dff;
+    font-size: 1.2rem;
     font-weight: 300;
     transition: all 0.3s ease-in-out;
     display: flex;
     column-gap: 5px;
     align-items: center;
 
-    svg {
-      color: black;
-      fill: black;
-    }
-
     &:hover,
-    &:focus {
+    &:focus * {
       transform: scale(1.1);
-      color: white;
-      svg {
-        fill: white;
-      }
+    }
+    svg {
+      fill: #272727;
     }
   }
 
@@ -56,6 +52,7 @@ export const Flex = styled.div`
     display: flex;
     flex-wrap: wrap;
     column-gap: 5px;
+    font-size: ${({ theme }) => theme.fsIcon};
     row-gap: 1rem;
     justify-content: flex-start;
     list-style: none;
@@ -63,16 +60,12 @@ export const Flex = styled.div`
     align-items: center;
   }
 
-  ul li svg {
-    color: white;
-    stroke: white;
+  svg {
     fill: #518dff;
-    display: flex;
     transition: all 0.3s ease-out;
     &:hover,
     &:focus {
       transform: scale(1.15);
-      fill: white;
     }
   }
 

@@ -1,6 +1,7 @@
 import initialBackground from "../../assets/img/test.png";
 import { Flex, InitialBackground } from "./About";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GoMail } from "react-icons/go";
 import { BsArrow90DegRight, BsArrowDown, BsArrowRight } from "react-icons/bs";
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub title="Github link" size="2em" />
+              <FaGithub title="Github link" />
             </a>
           </li>
           <li>
@@ -31,7 +32,12 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin title="Linkedin link" size="2em" />
+              <FaLinkedin title="Linkedin link" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:brandon@hazelton.dev" title="Email">
+              <GoMail />
             </a>
           </li>
           <li>

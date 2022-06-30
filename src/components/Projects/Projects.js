@@ -10,6 +10,7 @@ export const Flex = styled.div`
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
 `;
 
 export const Project = styled.div`
@@ -21,7 +22,8 @@ export const Project = styled.div`
     width: 100%;
   }
 
-  h2 {
+  h2,
+  h3 {
     width: 100%;
     font-weight: 200;
   }

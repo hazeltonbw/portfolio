@@ -6,7 +6,7 @@ export const burgerStyles = {
     width: "36px",
     height: "30px",
     right: "39px",
-    top: "10px",
+    top: "25px",
   },
   bmBurgerBars: {
     background: "#518dff",
@@ -41,6 +41,7 @@ export const burgerStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    rowGap: "5px",
   },
   bmItem: {
     display: "inline-block",

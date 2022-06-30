@@ -2,8 +2,8 @@ import { Flex, ProjectContainer, Project } from "./Projects";
 import redditImg from "../../assets/img/reddit.png";
 import shoppoImg from "../../assets/img/shoppo.png";
 import moviedb from "../../assets/img/moviedb.png";
-import jamming from "../../assets/img/jamming.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import jammming from "../../assets/img/jamming.png";
+import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 
 const projects = [
@@ -31,6 +31,14 @@ const projects = [
     liveLink: "https://bwhmoviedb.netlify.app/",
     description: "Movie Database using public API",
   },
+  {
+    h2: "Jammming",
+    img: jammming,
+    alt: "Screenshot of Jammming Spotify Playlist Creator app",
+    githubRepo: "https://github.com/hazeltonbw/jamming",
+    liveLink: "https://webejammming.netlify.app/",
+    description: "Spotify Playlist Creator App using React Class Components",
+  },
 ];
 
 const Projects = () => {
@@ -41,16 +49,17 @@ const Projects = () => {
         <ProjectContainer>
           {projects.map((project) => (
             <Project>
-              <h2>{project.h2}</h2>
-              <img src={project.img} alt={project.alt} />
-              <p>{project.description}</p>
-              <p>{project.tech}</p>
               <ul>
+                <li>
+                  <h2>{project.h2}</h2>
+                </li>
                 <li>
                   <a
                     href={project.githubRepo}
                     title="Github Source Code"
                     alt="Github Source Code"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <FaGithub size="2em" />
                   </a>
@@ -60,12 +69,16 @@ const Projects = () => {
                     href={project.liveLink}
                     title="Live Link"
                     alt={project.h2 + "website"}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <CgWebsite size="2em" />
                   </a>
                 </li>
               </ul>
-              <hr />
+              <h3>{project.description}</h3>
+              <p>{project.tech}</p>
+              <img src={project.img} alt={project.alt} />
             </Project>
           ))}
         </ProjectContainer>

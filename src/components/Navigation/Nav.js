@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   transition: all 0.3s ease-in-out;
   background-color: ${(props) =>
     props.navBarScroll === true ? "#323232" : "#272727"};

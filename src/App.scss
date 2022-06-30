@@ -12,8 +12,18 @@ body {
   /* scroll-padding-top accounts for sticky navigation size. It will scroll the desired amount
    * extra to line up div's perfectly
    * */ 
-  scroll-padding-top: 3rem;
-  svg {
+  scroll-padding-top: 5rem;
+  a, svg {
     color: #518dff;
+    fill: #518dff;
+    transition: all 0.3s ease-out;
+    &:hover,
+    &:focus {
+      transform: scale(1.15);
+    }
+  }
+
+  svg {
+    display: flex;
   }
 }

@@ -13,6 +13,7 @@ export const Hero = styled.div`
 
   svg {
     color: black;
+    fill: #272727;
   }
 
   display: grid;
@@ -29,7 +30,7 @@ export const Hero = styled.div`
 `;
 export const Flex = styled.div`
   display: flex;
-  height: calc(100vh - 3rem);
+  height: calc(100vh - 5rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
