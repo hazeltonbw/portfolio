@@ -47,8 +47,8 @@ const Projects = () => {
       <Flex>
         <h1>Projects</h1>
         <ProjectContainer>
-          {projects.map((project) => (
-            <Project>
+          {projects.map((project, index) => (
+            <Project key={index}>
               <ul>
                 <li>
                   <h2>{project.h2}</h2>
