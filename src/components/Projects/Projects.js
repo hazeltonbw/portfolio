@@ -4,7 +4,6 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: column;
   column-gap: 1rem;
-  height: calc(100vh - 3rem);
   padding: 1rem 2rem;
 `;
 
