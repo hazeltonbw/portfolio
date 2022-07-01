@@ -5,6 +5,7 @@ import moviedb from "../../assets/img/moviedb.png";
 import jammming from "../../assets/img/jamming.png";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import { Description } from "./Projects";
 
 const projects = [
   {
@@ -14,7 +15,7 @@ const projects = [
     githubRepo: "https://github.com/hazeltonbw/reddit",
     liveLink: "https://bwhredditclone.netlify.app/",
     description:
-      "Reddit clone was created to explore skeleton loading components, markdown rendering, responsive media carousels, animated lists, and the Redux toolkit.",
+      "reddit minimal was created to explore skeleton loading components, markdown rendering, responsive media carousels, animated lists, and the Redux toolkit.",
   },
   {
     h2: "Shoppo eCommerce Store",
@@ -47,47 +48,44 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <Flex>
-        <h1>Projects</h1>
-        <ProjectContainer>
-          {projects.map((project, index) => (
-            <Project key={index}>
-              <ul>
-                <li>
-                  <h2>{project.h2}</h2>
-                </li>
-                <li>
-                  <a
-                    href={project.githubRepo}
-                    title="Github Source Code"
-                    alt="Github Source Code"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaGithub size="2em" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={project.liveLink}
-                    title="Live Link"
-                    alt={project.h2 + "website"}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <CgWebsite size="2em" />
-                  </a>
-                </li>
-              </ul>
-              <h3>{project.description}</h3>
-              <p>{project.tech}</p>
-              <img src={project.img} alt={project.alt} />
-            </Project>
-          ))}
-        </ProjectContainer>
-      </Flex>
-    </div>
+    <Flex id="projects">
+      <h1>Projects</h1>
+      <ProjectContainer>
+        {projects.map((project, index) => (
+          <Project key={index}>
+            <ul>
+              <li>
+                <h2>{project.h2}</h2>
+              </li>
+              <li>
+                <a
+                  href={project.githubRepo}
+                  title="Github Source Code"
+                  alt="Github Source Code"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub size="2em" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={project.liveLink}
+                  title="Live Link"
+                  alt={project.h2 + "website"}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <CgWebsite size="2em" />
+                </a>
+              </li>
+            </ul>
+            <Description>{project.description}</Description>
+            <img src={project.img} alt={project.alt} />
+          </Project>
+        ))}
+      </ProjectContainer>
+    </Flex>
   );
 };
 

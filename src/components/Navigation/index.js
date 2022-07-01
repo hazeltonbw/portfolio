@@ -26,12 +26,12 @@ const Navigation = () => {
   }, [navBarScroll]);
 
   return (
-    <Nav navBarScroll={navBarScroll}>
+    <Nav id="nav" navBarScroll={navBarScroll}>
       <Logo href="https://www.hazelton.dev">H</Logo>
       <ul>
         <li>
           {/* TODO: Change to default website URL when website is up */}
-          <a href="https://www.hazelton.dev" className={isActive("")}>
+          <a href="#home" className={isActive("")}>
             Home
           </a>
         </li>
@@ -55,11 +55,7 @@ const Navigation = () => {
         <Menu id={"burger-menu"} right styles={burgerStyles}>
           <ul id="burger-links">
             <li>
-              <a
-                href="https://www.hazelton.dev"
-                alt="Homepage"
-                className={isActive("")}
-              >
+              <a href="#home" alt="Homepage" className={isActive("")}>
                 Home
               </a>
             </li>

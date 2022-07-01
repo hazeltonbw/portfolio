@@ -4,7 +4,7 @@ import { BsArrow90DegRight, BsArrowDown, BsArrowRight } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <Flex>
+    <Flex id="home">
       <Hero>
         <Card>
           <h1>Hello! My name is</h1>
