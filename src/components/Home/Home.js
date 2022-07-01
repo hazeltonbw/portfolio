@@ -12,6 +12,7 @@ export const Hero = styled.div`
   }
 
   svg {
+    display: inline-block;
     color: black;
     fill: #272727;
   }

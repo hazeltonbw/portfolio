@@ -16,6 +16,7 @@ body {
   a, svg {
     color: #518dff;
     fill: #518dff;
+    display: block;
     transition: all 0.3s ease-out;
     &:hover,
     &:focus {

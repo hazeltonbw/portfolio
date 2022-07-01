@@ -13,15 +13,26 @@ const projects = [
     alt: "Screenshot of Reddit app",
     githubRepo: "https://github.com/hazeltonbw/reddit",
     liveLink: "https://bwhredditclone.netlify.app/",
-    description: "Recreation of Reddit using Redux to handle state changes",
+    description:
+      "Reddit clone was created to explore skeleton loading components, markdown rendering, responsive media carousels, animated lists, and the Redux toolkit.",
   },
   {
-    h2: "Shoppo Store",
+    h2: "Shoppo eCommerce Store",
     img: shoppoImg,
     alt: "Screenshot of Shoppo e-commerce store",
     githubRepo: "https://github.com/hazeltonbw/ecommerce",
     liveLink: "https://bwhshoppo.netlify.app/",
-    description: "Front end ecommerce store",
+    description:
+      "Shoppo is a front end e-commerce store using the Redux toolkit to fetch and store products in state. Pages are rendered using react-router-dom, and styled with styled-components. ",
+  },
+  {
+    h2: "Jammming",
+    img: jammming,
+    alt: "Screenshot of Jammming Spotify Playlist Creator",
+    githubRepo: "https://github.com/hazeltonbw/jamming",
+    liveLink: "https://webejammming.netlify.app/",
+    description:
+      "Spotify Playlist Creator is created with React Class Components. It is one of my first major projects using GET/POST methods to fetch songs and to save users desired playlist to their Spotify account.",
   },
   {
     h2: "Movie Database",
@@ -29,15 +40,8 @@ const projects = [
     alt: "Screenshot of Movie Database app",
     githubRepo: "https://github.com/hazeltonbw/movie-db",
     liveLink: "https://bwhmoviedb.netlify.app/",
-    description: "Movie Database using public API",
-  },
-  {
-    h2: "Jammming",
-    img: jammming,
-    alt: "Screenshot of Jammming Spotify Playlist Creator app",
-    githubRepo: "https://github.com/hazeltonbw/jamming",
-    liveLink: "https://webejammming.netlify.app/",
-    description: "Spotify Playlist Creator App using React Class Components",
+    description:
+      "Movie Database was created to explore an older version of react-router-dom, react-modals, and to further gain skills in Redux. Users can enter in a search for a movie and the app will return results found from a free public API.",
   },
 ];
 
