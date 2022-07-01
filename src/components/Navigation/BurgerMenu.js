@@ -41,7 +41,11 @@ export const burgerStyles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: "space-between",
     rowGap: "5px",
+    left: "0",
+    width: "100%",
+    height: "calc(100% - 2.5rem)",
   },
   bmItem: {
     display: "inline-block",
@@ -51,7 +55,16 @@ export const burgerStyles = {
   },
 };
 
-export const Menu = styled(elastic)``;
+export const Menu = styled(elastic)`
+  #burger-links {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  #burger-footer-links {
+    display: flex !important;
+  }
+`;
 export const MenuWrapper = styled.div`
   display: none;
   @media (max-width: 640px) {

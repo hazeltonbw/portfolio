@@ -33,7 +33,7 @@ const Footer = () => {
         </li>
       </ul>
       <Flex>
-        <Logo href="#">H</Logo>
+        <Logo href="https://www.hazelton.dev">H</Logo>
         <span>&copy; {new Date().getFullYear()} Brandon Hazelton</span>
       </Flex>
     </StyledFooter>

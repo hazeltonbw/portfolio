@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <MainContainer>
+      <MainContainer id="main">
         <Home />
         <About />
         <Projects />

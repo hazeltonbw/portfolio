@@ -3,6 +3,8 @@ import { Logo } from "../../shared/StyledComponents";
 import { Menu, burgerStyles, MenuWrapper } from "./BurgerMenu";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Navigation = () => {
   const location = useLocation();
@@ -25,11 +27,11 @@ const Navigation = () => {
 
   return (
     <Nav navBarScroll={navBarScroll}>
-      <Logo href="#">H</Logo>
+      <Logo href="https://www.hazelton.dev">H</Logo>
       <ul>
         <li>
           {/* TODO: Change to default website URL when website is up */}
-          <a href="#" className={isActive("")}>
+          <a href="https://www.hazelton.dev" className={isActive("")}>
             Home
           </a>
         </li>
@@ -51,19 +53,71 @@ const Navigation = () => {
       </ul>
       <MenuWrapper>
         <Menu id={"burger-menu"} right styles={burgerStyles}>
-          {/* TODO: Change to default website URL when website is up */}
-          <a href="#" className={isActive("")}>
-            Home
-          </a>
-          <a href="#about" className={isActive("#about")}>
-            About
-          </a>
-          <a href="#projects" className={isActive("#projects")}>
-            Projects
-          </a>
-          <a href="#contact" className={isActive("#contact")}>
-            Contact
-          </a>
+          <ul id="burger-links">
+            <li>
+              <a
+                href="https://www.hazelton.dev"
+                alt="Homepage"
+                className={isActive("")}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                alt="About section"
+                className={isActive("#about")}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                alt="Projects section"
+                className={isActive("#projects")}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                alt="Contact section"
+                className={isActive("#contact")}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul id="burger-footer-links">
+            <li>
+              <a
+                href="https://github.com/hazeltonbw"
+                target="_blank"
+                rel="noreferrer"
+                title="Github"
+              >
+                <FaGithub title="Github" size="2em" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hazeltonbw/"
+                target="_blank"
+                rel="noreferrer"
+                title="Linkedin"
+              >
+                <FaLinkedin title="Linkedin" size="2em" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:brandon@hazelton.dev" title="Email">
+                <FiMail size="2em" style={{ fill: "#272727" }} />
+              </a>
+            </li>
+          </ul>
         </Menu>
       </MenuWrapper>
     </Nav>
