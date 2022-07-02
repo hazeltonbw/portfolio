@@ -5,6 +5,10 @@ export const Flex = styled.div`
   flex-direction: column;
   row-gap: 1rem;
   padding: 1rem 2rem;
+
+  h1 {
+    font-size: ${({ theme }) => theme.fsxl};
+  }
 `;
 
 export const ProjectContainer = styled.div`
