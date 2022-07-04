@@ -18,7 +18,8 @@ export const ProjectContainer = styled.div`
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  a:hover {
+  a:hover,
+  a:focus {
     transform: scale(1);
   }
 `;
