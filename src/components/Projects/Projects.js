@@ -13,7 +13,7 @@ export const Flex = styled.div`
 
 export const ProjectContainer = styled.div`
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
 
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
