@@ -81,7 +81,12 @@ const Projects = () => {
               </li>
             </ul>
             <Description>{project.description}</Description>
-            <a href={project.liveLink} alt={project.h2 + "website"}>
+            <a
+              href={project.liveLink}
+              alt={project.h2 + "website"}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={project.img} alt={project.alt} />
             </a>
           </Project>
