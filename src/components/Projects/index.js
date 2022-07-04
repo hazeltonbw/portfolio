@@ -1,8 +1,8 @@
 import { Flex, ProjectContainer, Project } from "./Projects";
-import redditImg from "../../assets/img/reddit.png";
-import shoppoImg from "../../assets/img/shoppo.png";
-import moviedb from "../../assets/img/moviedb.png";
-import jammming from "../../assets/img/jamming.png";
+import redditImg from "../../assets/img/reddit.webp";
+import shoppoImg from "../../assets/img/shoppo.webp";
+import moviedb from "../../assets/img/moviedb.webp";
+import jammming from "../../assets/img/jamming.webp";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { Description } from "./Projects";
