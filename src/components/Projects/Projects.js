@@ -18,6 +18,9 @@ export const ProjectContainer = styled.div`
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  a:hover {
+    transform: scale(1);
+  }
 `;
 
 export const Description = styled.p`
@@ -50,8 +53,5 @@ export const Project = styled.div`
     list-style-type: none;
     line-height: 1;
     align-items: center;
-  }
-
-  @media (min-width: 640px) {
   }
 `;
