@@ -7,7 +7,7 @@ export const Flex = styled.div`
   justify-content: center;
   column-gap: 1rem;
   height: calc(100vh - 5rem);
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 
   .about-text {
     display: flex;

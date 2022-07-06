@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   display: flex;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   row-gap: 0.5rem;
   align-items: center;
   flex-direction: column;
