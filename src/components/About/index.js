@@ -2,6 +2,7 @@ import initialBackground from "../../assets/img/initialsShowingSkills.webp";
 import { Flex, InitialBackground } from "./About";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
+
 import { BsArrowRight } from "react-icons/bs";
 const About = () => {
   return (
