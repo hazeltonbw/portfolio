@@ -4,7 +4,7 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 
   h1 {
     font-size: ${({ theme }) => theme.fsxl};
