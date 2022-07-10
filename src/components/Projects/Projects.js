@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Flex = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const Flex = styled.div`
   h1 {
     font-size: ${({ theme }) => theme.fsxl};
   }
-`;
+`
 
 export const ProjectContainer = styled.div`
   display: grid;
@@ -22,7 +22,7 @@ export const ProjectContainer = styled.div`
   a:focus {
     transform: scale(1);
   }
-`;
+`
 
 export const Description = styled.p`
   position: relative;
@@ -30,14 +30,26 @@ export const Description = styled.p`
   max-width: 40ch;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     height: calc(100% - 2rem);
     left: 0px;
     display: inline-block;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
   }
-`;
+`
+
+export const Footnote = styled.p`
+  display: ${({ footnotesOpen }) => (footnotesOpen ? 'block' : 'none')};
+  background: #518dff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  & > a {
+    display: inline-block;
+    color: #001979;
+  }
+`
 
 export const Project = styled.div`
   display: flex;
@@ -55,4 +67,7 @@ export const Project = styled.div`
     line-height: 1;
     align-items: center;
   }
-`;
+
+  #footnote {
+  }
+`
