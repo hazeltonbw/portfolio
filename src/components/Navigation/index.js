@@ -112,39 +112,7 @@ const Navigation = () => {
               </a>
             </li>
           </ul>
-          <ul id='burger-footer-links'>
-            <li>
-              <a
-                href='https://github.com/hazeltonbw'
-                target='_blank'
-                rel='noreferrer'
-                title='Github'
-                onClick={closeSideBar}
-              >
-                <FaGithub title='Github' size='2em' />
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/hazeltonbw/'
-                target='_blank'
-                rel='noreferrer'
-                title='Linkedin'
-                onClick={closeSideBar}
-              >
-                <FaLinkedin title='Linkedin' size='2em' />
-              </a>
-            </li>
-            <li>
-              <a
-                href='mailto:brandon@hazelton.dev'
-                title='Email'
-                onClick={closeSideBar}
-              >
-                <FiMail size='2em' style={{ fill: '#272727' }} />
-              </a>
-            </li>
-          </ul>
+          <Logo href='#home' onClick={closeSideBar}>H</Logo>
         </Menu>
       </MenuWrapper>
     </Nav>

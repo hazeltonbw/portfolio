@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Flex = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ export const Flex = styled.div`
   .projects {
     border: none;
     text-decoration: none;
-    color: #272727;
+    color: white;
     border-radius: 0.5rem;
     padding: 0.5rem;
     background: #518dff;
@@ -44,7 +44,7 @@ export const Flex = styled.div`
       transform: scale(1.1);
     }
     svg {
-      fill: #272727;
+      fill: white;
     }
   }
 
@@ -78,7 +78,7 @@ export const Flex = styled.div`
       justify-content: flex-start;
     }
   }
-`;
+`
 
 export const InitialBackground = styled.div`
   flex: 2;
@@ -93,4 +93,4 @@ export const InitialBackground = styled.div`
     flex: 1;
     height: 150px;
   }
-`;
+`

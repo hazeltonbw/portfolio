@@ -9,8 +9,8 @@ export const Nav = styled.nav`
   width: 100%;
   height: 5rem;
   transition: all 0.3s ease-in-out;
-  background-color: ${(props) =>
-    props.navBarScroll === true ? "#323232" : "#272727"};
+  background-color: ${({navBarScroll}) =>
+    navBarScroll === true ? "#323232" : "#272727"};
 
   display: flex;
   justify-content: space-between;

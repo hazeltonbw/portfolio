@@ -61,9 +61,6 @@ export const Menu = styled(elastic)`
     flex-direction: column;
     align-items: center;
   }
-  #burger-footer-links {
-    display: flex !important;
-  }
 `;
 export const MenuWrapper = styled.div`
   display: none;
