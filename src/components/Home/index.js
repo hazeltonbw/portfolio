@@ -9,7 +9,7 @@ const Home = () => {
         <Card>
           <h1>Hello! My name is</h1>
           <h1>
-            <strong>Brandon Hazelton</strong>.
+            <strong>Brandon Hazelton</strong>
           </h1>
           <h1>I am a full-stack web developer.</h1>
           <a href="#about">
