@@ -3,11 +3,12 @@ import redditImg from '../../assets/img/reddit.webp'
 import shoppoImg from '../../assets/img/shoppo.webp'
 import moviedb from '../../assets/img/moviedb.webp'
 import jammming from '../../assets/img/jamming.webp'
-import { FaGithub, FaCode } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import { FcInfo } from 'react-icons/fc'
 import { CgWebsite } from 'react-icons/cg'
 import { Description } from './Projects'
 import { useState } from 'react'
+import ReactTooltip from 'react-tooltip'
 
 const projects = [
   {
@@ -56,11 +57,7 @@ const projects = [
 ]
 
 const Projects = () => {
-  const [footnotesOpen, setFootnotesOpen] = useState(false)
-  const toggleInfo = () => {
-    setFootnotesOpen(!footnotesOpen)
-    console.log('footnotes open')
-  }
+  const [tooltip, showTooltip] = useState(false)
 
   return (
     <Flex id='projects'>
@@ -98,18 +95,36 @@ const Projects = () => {
             <Description>
               {project.description}
               {project.footnote && (
-                <FcInfo
-                  style={{
-                    display: 'inline-block',
-                  }}
-                  onClick={toggleInfo}
-                />
+                <>
+                  <FcInfo
+                    style={{ display: 'inline-block' }}
+                    data-tip="Note: Spotify's API requires users email addresses to be added to the developer dashboard in order to update playlists on Spotify. If you'd like access, please contact me."
+                    // TODO: react-tooltip is not supported in React 18 yet,
+                    // had to introduce this nice little hack to make tooltips work on hover
+                    onMouseEnter={() => showTooltip(true)}
+                    onMouseLeave={() => {
+                      showTooltip(false)
+                      setTimeout(() => showTooltip(true), 50)
+                    }}
+                  />
+                  {tooltip && (
+                    <ReactTooltip
+                      place='bottom'
+                      effect='solid'
+                      type='info'
+                      backgroundColor='#518dff'
+                      className='tooltip'
+                    />
+                  )}
+                </>
               )}
             </Description>
             {project.footnote && (
-              <Footnote footnotesOpen={footnotesOpen}>
+              <Footnote>
                 {project.footnote}
-                <a href="mailto:brandon@hazelton.dev?subject=Requesting access to Spotify Playlist Creator">email me.</a>
+                <a href='mailto:brandon@hazelton.dev?subject=Requesting access to Spotify Playlist Creator'>
+                  email me.
+                </a>
               </Footnote>
             )}
             <a

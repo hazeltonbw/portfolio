@@ -68,6 +68,9 @@ export const Project = styled.div`
     align-items: center;
   }
 
-  #footnote {
+  .tooltip {
+    opacity: 1 !important;
+    max-width: 35ch;
+    font-size: 1rem;
   }
 `
