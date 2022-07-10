@@ -91,13 +91,11 @@ const Projects = () => {
                   <CgWebsite size='2em' />
                 </a>
               </li>
-            </ul>
-            <Description>
-              {project.description}
-              {project.footnote && (
-                <>
+              <li>
+                {project.footnote && (
                   <FcInfo
                     style={{ display: 'inline-block' }}
+                    size='2em'
                     data-tip="Note: Spotify's API requires users email addresses to be added to the developer dashboard in order to update playlists on Spotify. If you'd like access, please contact me."
                     // TODO: react-tooltip is not supported in React 18 yet,
                     // had to introduce this nice little hack to make tooltips work on hover
@@ -107,8 +105,12 @@ const Projects = () => {
                       setTimeout(() => setShowTooltip(true), 50)
                     }}
                   />
-                </>
-              )}
+                )}
+              </li>
+            </ul>
+            <Description>
+              {project.description}
+              {project.footnote && <></>}
             </Description>
             {showTooltip && (
               <ReactTooltip

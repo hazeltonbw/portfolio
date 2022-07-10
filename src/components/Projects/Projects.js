@@ -69,6 +69,7 @@ export const Project = styled.div`
   }
 
   .tooltip {
+    background: #518dff;
     opacity: 1 !important;
     max-width: 35ch;
     font-size: 1rem;
