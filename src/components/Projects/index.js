@@ -57,7 +57,7 @@ const projects = [
 ]
 
 const Projects = () => {
-  const [tooltip, showTooltip] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(true)
 
   return (
     <Flex id='projects'>
@@ -101,24 +101,25 @@ const Projects = () => {
                     data-tip="Note: Spotify's API requires users email addresses to be added to the developer dashboard in order to update playlists on Spotify. If you'd like access, please contact me."
                     // TODO: react-tooltip is not supported in React 18 yet,
                     // had to introduce this nice little hack to make tooltips work on hover
-                    onMouseEnter={() => showTooltip(true)}
+                    onMouseEnter={() => setShowTooltip(true)}
                     onMouseLeave={() => {
-                      showTooltip(false)
-                      setTimeout(() => showTooltip(true), 50)
+                      setShowTooltip(false)
+                      setTimeout(() => setShowTooltip(true), 50)
                     }}
                   />
-                  {tooltip && (
-                    <ReactTooltip
-                      place='bottom'
-                      effect='solid'
-                      type='info'
-                      backgroundColor='#518dff'
-                      className='tooltip'
-                    />
-                  )}
                 </>
               )}
             </Description>
+            {showTooltip && (
+              <ReactTooltip
+                place='bottom'
+                effect='solid'
+                type='info'
+                delayShow={300}
+                backgroundColor='#518dff'
+                className='tooltip'
+              />
+            )}
             {project.footnote && (
               <Footnote>
                 {project.footnote}

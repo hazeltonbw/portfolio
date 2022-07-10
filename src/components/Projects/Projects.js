@@ -72,5 +72,6 @@ export const Project = styled.div`
     opacity: 1 !important;
     max-width: 35ch;
     font-size: 1rem;
+    border-radius: 0.5rem;
   }
 `
