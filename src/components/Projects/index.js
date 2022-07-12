@@ -18,7 +18,7 @@ const projects = [
     githubRepo: 'https://github.com/hazeltonbw/reddit',
     liveLink: 'https://bwhredditclone.netlify.app/',
     description:
-      'reddit minimal was created to explore skeleton loading components, markdown rendering, responsive media carousels, animated lists, and the Redux toolkit.',
+      'reddit minimal is a reddit clone created to explore skeleton loading components, markdown rendering, responsive media carousels, animated lists, and the Redux toolkit.',
   },
   {
     h2: 'Jammming',
@@ -43,7 +43,7 @@ const projects = [
     githubRepo: 'https://github.com/hazeltonbw/ecommerce',
     liveLink: 'https://bwhshoppo.netlify.app/',
     description:
-      'Shoppo is a front end e-commerce store using the Redux toolkit to fetch and store products in state. Pages are rendered using react-router-dom, and styled with styled-components. ',
+      'Shoppo is a front end e-commerce store using the Redux toolkit to fetch and store products in state. Pages are rendered using react-router-dom, and styled with a light/dark theme using styled-components. ',
   },
   {
     h2: 'Movie Database',
@@ -94,6 +94,7 @@ const Projects = () => {
               <li>
                 {project.footnote && (
                   <FcInfo
+                    aria-label='Side note about project'
                     style={{ display: 'inline-block' }}
                     size='2em'
                     data-tip="Note: Spotify's API requires users email addresses to be added to the developer dashboard in order to update playlists on Spotify. If you'd like access, please contact me."

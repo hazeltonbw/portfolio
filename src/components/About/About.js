@@ -28,7 +28,7 @@ export const Flex = styled.div`
   .projects {
     border: none;
     text-decoration: none;
-    color: white;
+    color: #272727;
     border-radius: 0.5rem;
     padding: 0.5rem;
     background: #518dff;
@@ -44,7 +44,7 @@ export const Flex = styled.div`
       transform: scale(1.1);
     }
     svg {
-      fill: white;
+      fill: #272727;
     }
   }
 

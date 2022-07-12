@@ -11,7 +11,7 @@ const Home = () => {
           <h1>
             <strong>Brandon Hazelton</strong>
           </h1>
-          <h1>I am a full-stack web developer</h1>
+          <h1>I am a front-end web developer</h1>
           <a href='#about'>
             Learn more &nbsp;
             <BsArrowRight style={{ verticalAlign: 'bottom' }} />

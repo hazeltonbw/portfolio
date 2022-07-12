@@ -1,5 +1,5 @@
 import { Flex, TextWrapper } from './Contact'
-import background from '../../assets/img/julian-hochgesang-psGV5KhidlY-unsplash.jpg'
+import background from '../../assets/img/contact-background.webp'
 import { BsArrowRight } from 'react-icons/bs'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
