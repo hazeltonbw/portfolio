@@ -13,7 +13,7 @@ const Navigation = () => {
 
   const isActive = (url) => {
     if (location.hash === url) return 'active'
-    return null
+    return ''
   }
 
   const handleIsOpen = () => {
@@ -40,7 +40,7 @@ const Navigation = () => {
       <Logo href='https://www.hazelton.dev'>H</Logo>
       <ul>
         <li>
-          <a href='#home' className={isActive('')}>
+          <a href='#home' className={isActive('#home') || isActive('')}>
             Home
           </a>
         </li>
@@ -112,7 +112,9 @@ const Navigation = () => {
               </a>
             </li>
           </ul>
-          <Logo href='#home' onClick={closeSideBar}>H</Logo>
+          <Logo href='#home' onClick={closeSideBar}>
+            H
+          </Logo>
         </Menu>
       </MenuWrapper>
     </Nav>
