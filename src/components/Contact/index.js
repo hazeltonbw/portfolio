@@ -8,8 +8,8 @@ const Contact = () => {
     <div id='contact'>
       <Flex background={background}>
         <TextWrapper>
-          <h1>Contact me</h1>
-          <h2>Lets get to work</h2>
+          <h1>Contact me.</h1>
+          <h2>Let's build something great.</h2>
           <ul>
             <li>
               <a href='mailto:brandon@hazelton.dev' title='Email'>
