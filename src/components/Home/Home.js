@@ -23,7 +23,8 @@ export const Hero = styled.div`
   align-items: center;
 
   img {
-    width: 100%;
+    width: 250px;
+    height: 250px;
     max-height: 500px;
     grid-row: 1 / span 2;
     grid-column: 4 / span 1;
