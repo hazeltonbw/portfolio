@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Hero = styled.div`
   @media (max-width: 640px) {
@@ -23,20 +23,19 @@ export const Hero = styled.div`
   align-items: center;
 
   img {
-    width: 250px;
-    height: 250px;
-    max-height: 500px;
+    max-height: 350px;
+    width: 100%;
     grid-row: 1 / span 2;
     grid-column: 4 / span 1;
   }
-`;
+`
 export const Flex = styled.div`
   display: flex;
   height: calc(100vh - 5rem);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const Card = styled.div`
   grid-column: 1 / span 3;
@@ -73,4 +72,4 @@ export const Card = styled.div`
   a:focus {
     transform: scale(1.15);
   }
-`;
+`

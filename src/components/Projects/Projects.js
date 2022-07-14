@@ -57,6 +57,7 @@ export const Project = styled.div`
 
   img {
     width: 100%;
+    height: auto;
   }
 
   ul {
