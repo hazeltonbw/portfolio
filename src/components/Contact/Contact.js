@@ -1,9 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const TextWrapper = styled.div`
-  transform: translateX(-40%) skewX(7deg) skewY(-3deg) translateY(-30%);
+  transform: translateX(-35%) skewX(7deg) skewY(-3deg) translateY(-30%);
   text-align: center;
-
+  @media (max-width: 480px) {
+    transform: translateX(-15%) skewX(7deg) skewY(-3deg) translateY(-30%);
+  }
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -33,7 +35,7 @@ export const TextWrapper = styled.div`
       text-decoration: none;
     }
   }
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -59,7 +61,7 @@ export const Flex = styled.div`
   }
 
   &:before {
-    content: '';
+    content: "";
     height: 100%;
     width: 100%;
     left: 0;
@@ -73,4 +75,4 @@ export const Flex = styled.div`
     background-position: center;
     background-size: cover;
   }
-`
+`;
