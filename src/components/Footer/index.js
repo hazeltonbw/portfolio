@@ -1,5 +1,5 @@
 import { Logo } from '../../shared/StyledComponents'
-import { StyledFooter } from "./Footer"
+import { StyledFooter } from './Footer'
 const Footer = () => {
   return (
     <StyledFooter>
