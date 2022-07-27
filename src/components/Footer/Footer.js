@@ -1,23 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const StyledFooter = styled.footer`
+export const StyledFooter = styled.div`
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
   display: flex;
-  padding: 1rem 2rem;
-  row-gap: 0.5rem;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
-
-  ul {
-    list-style-type: none;
-    display: inline-flex;
-    column-gap: 0.5rem;
-  }
-
-  a {
-    color: #518dff;
-    text-decoration: none;
-  }
-`;
+  column-gap: 0.5rem;
+`

@@ -43,7 +43,7 @@ export const Flex = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  height: calc(100vh - 11rem);
+  height: calc(100vh - 5rem);
   justify-content: center;
   h1 {
     position: relative;
@@ -75,4 +75,9 @@ export const Flex = styled.div`
     background-position: center;
     background-size: cover;
   }
+`
+
+export const FlexRow = styled.div`
+  display: flex;
+  gap: 0.5rem;
 `

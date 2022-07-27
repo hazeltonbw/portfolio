@@ -2,6 +2,7 @@ import { Flex, TextWrapper } from './Contact'
 import background from '../../assets/img/contact-background.webp'
 import { FaLinkedin } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
+import Footer from '../Footer'
 
 const Contact = () => {
   return (
@@ -28,6 +29,7 @@ const Contact = () => {
             </li>
           </ul>
         </TextWrapper>
+        <Footer />
       </Flex>
     </div>
   )
