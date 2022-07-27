@@ -58,6 +58,11 @@ export const Project = styled.div`
   img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.02);
   }
 
   ul {

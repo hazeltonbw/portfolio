@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const TextWrapper = styled.div`
+  @media (max-width: 500px) {
+  transform: translateX(0%) skewX(7deg) skewY(-3deg) translateY(-30%);
+    
+  }
   transform: translateX(-40%) skewX(7deg) skewY(-3deg) translateY(-30%);
   text-align: center;
 
