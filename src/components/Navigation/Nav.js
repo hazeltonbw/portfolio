@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Logo } from "../../shared/StyledComponents";
+import styled from 'styled-components'
+import { Logo } from '../../shared/StyledComponents'
 
 export const Nav = styled.nav`
   position: sticky;
@@ -9,8 +9,8 @@ export const Nav = styled.nav`
   width: 100%;
   height: 5rem;
   transition: all 0.3s ease-in-out;
-  background-color: ${({navBarScroll}) =>
-    navBarScroll === true ? "#323232" : "#272727"};
+  background-color: ${({ navBarScroll }) =>
+    navBarScroll === true ? '#323232' : '#272727'};
 
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 1rem;
   }
 
   a {
@@ -41,7 +41,7 @@ export const Nav = styled.nav`
   }
 
   a:after {
-    content: "";
+    content: '';
     display: block;
     border-bottom: 1px solid ${({ theme }) => theme.linkColors};
     transform: scaleX(0);
@@ -65,4 +65,4 @@ export const Nav = styled.nav`
       display: none;
     }
   }
-`;
+`
