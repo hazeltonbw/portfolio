@@ -1,61 +1,59 @@
-import { Nav } from './Nav'
-import { Logo } from '../../shared/StyledComponents'
-import { Menu, burgerStyles, MenuWrapper } from './BurgerMenu'
-import { useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { FiMail } from 'react-icons/fi'
+import { Nav } from "./Nav";
+import { Logo } from "../../shared/StyledComponents";
+import { Menu, burgerStyles, MenuWrapper } from "./BurgerMenu";
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
-  const location = useLocation()
-  const [navBarScroll, setNavBarScroll] = useState(false)
-  const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const location = useLocation();
+  const [navBarScroll, setNavBarScroll] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const isActive = (url) => {
-    if (location.hash === url) return 'active'
-    return ''
-  }
+    if (location.hash === url) return "active";
+    return "";
+  };
 
   const handleIsOpen = () => {
-    setMenuIsOpen(!menuIsOpen)
-  }
+    setMenuIsOpen(!menuIsOpen);
+  };
 
   const closeSideBar = () => {
-    setMenuIsOpen(false)
-  }
+    setMenuIsOpen(false);
+  };
 
   useEffect(() => {
     const changeNavbarColor = () => {
       if (window.scrollY >= 80) {
-        setNavBarScroll(true)
+        setNavBarScroll(true);
       } else {
-        setNavBarScroll(false)
+        setNavBarScroll(false);
       }
-    }
-    window.addEventListener('scroll', changeNavbarColor)
-  }, [navBarScroll])
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, [navBarScroll]);
 
   return (
-    <Nav id='nav' navBarScroll={navBarScroll}>
-      <Logo href='https://www.hazelton.dev'>H</Logo>
+    <Nav id="nav" navBarScroll={navBarScroll}>
+      <Logo href="https://www.hazelton.dev">H</Logo>
       <ul>
         <li>
-          <a href='#home' className={isActive('#home') || isActive('')}>
+          <a href="#home" className={isActive("#home") || isActive("")}>
             Home
           </a>
         </li>
         <li>
-          <a href='#about' className={isActive('#about')}>
+          <a href="#about" className={isActive("#about")}>
             About
           </a>
         </li>
         <li>
-          <a href='#projects' className={isActive('#projects')}>
+          <a href="#projects" className={isActive("#projects")}>
             Projects
           </a>
         </li>
         <li>
-          <a href='#contact' className={isActive('#contact')}>
+          <a href="#contact" className={isActive("#contact")}>
             Contact
           </a>
         </li>
@@ -66,16 +64,16 @@ const Navigation = () => {
           onOpen={handleIsOpen}
           onClose={handleIsOpen}
           noOverlay
-          id={'burger-menu'}
+          id={"burger-menu"}
           right
           styles={burgerStyles}
         >
-          <ul id='burger-links'>
+          <ul id="burger-links">
             <li>
               <a
-                href='#home'
-                alt='Homepage'
-                className={isActive('')}
+                href="#home"
+                alt="Homepage"
+                className={isActive("")}
                 onClick={closeSideBar}
               >
                 Home
@@ -83,9 +81,9 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href='#about'
-                alt='About section'
-                className={isActive('#about')}
+                href="#about"
+                alt="About section"
+                className={isActive("#about")}
                 onClick={closeSideBar}
               >
                 About
@@ -93,9 +91,9 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href='#projects'
-                alt='Projects section'
-                className={isActive('#projects')}
+                href="#projects"
+                alt="Projects section"
+                className={isActive("#projects")}
                 onClick={closeSideBar}
               >
                 Projects
@@ -103,21 +101,21 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href='#contact'
-                alt='Contact section'
-                className={isActive('#contact')}
+                href="#contact"
+                alt="Contact section"
+                className={isActive("#contact")}
                 onClick={closeSideBar}
               >
                 Contact
               </a>
             </li>
           </ul>
-          <Logo href='#home' onClick={closeSideBar}>
+          <Logo href="#home" onClick={closeSideBar}>
             H
           </Logo>
         </Menu>
       </MenuWrapper>
     </Nav>
-  )
-}
-export default Navigation
+  );
+};
+export default Navigation;
