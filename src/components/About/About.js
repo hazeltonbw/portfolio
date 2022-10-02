@@ -9,13 +9,6 @@ export const Flex = styled.div`
   height: calc(100vh - 5rem);
   padding: 0 2rem;
 
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-  }
-
   h1 {
     font-size: ${({ theme }) => theme.fsxl};
   }
@@ -72,11 +65,22 @@ export const Flex = styled.div`
   @media (max-width: 640px) {
     flex-direction: column;
     align-items: flex-start;
+  }
+`
 
-    .about-text {
-      flex: 2;
-      justify-content: flex-start;
-    }
+export const AboutMe = styled.div`
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  text-decoration: justified;
+
+  h1 {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 640px) {
+    flex: 0;
+    width: 100%;
   }
 `
 

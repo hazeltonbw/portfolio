@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Epoch time</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class='epoch'>test</div>
+    <script>
+      const epochTime = Math.trunc(Date.now() / 1e3);
+      let epochDiv = document.querySelector('.epoch')
+      epochDiv.innerHTML = epochTime
+    </script>
+  </body>
+</html>

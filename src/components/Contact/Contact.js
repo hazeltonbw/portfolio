@@ -68,7 +68,7 @@ export const Flex = styled.div`
     right: 0;
     bottom: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.2;
     display: inline-block;
     position: absolute;
     background: url(${({ background }) => background});

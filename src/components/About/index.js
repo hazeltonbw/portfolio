@@ -2,13 +2,14 @@ import initialBackground from '../../assets/img/initialsShowingSkills.webp'
 import { Flex, InitialBackground } from './About'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GoMail } from 'react-icons/go'
+import { AboutMe } from './About'
 
 import { BsArrowRight } from 'react-icons/bs'
 const About = () => {
   return (
     <Flex id='about'>
       <InitialBackground pic={initialBackground}></InitialBackground>
-      <div className='about-text'>
+      <AboutMe className='about-text'>
         <h1>About</h1>
         <p>
           Technology junkie. Strive to be the best in the field, from server
@@ -48,7 +49,7 @@ const About = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </AboutMe>
     </Flex>
   )
 }

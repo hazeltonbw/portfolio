@@ -21,12 +21,15 @@ export const Hero = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
+  width: 100%;
+  padding: 0 2rem;
 
   img {
     max-height: 350px;
     width: 100%;
     grid-row: 1 / span 2;
     grid-column: 4 / span 1;
+    box-shadow: 0px 0px 5px 5px white, 0px 0px 1px 10px #518dff;
   }
 `
 export const Flex = styled.div`

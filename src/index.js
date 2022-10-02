@@ -1,13 +1,13 @@
-import App from "./App";
+import App from './App'
 
-import { createRoot } from "react-dom/client";
-import { StrictMode } from "react";
-import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./shared/theme";
+import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './shared/theme'
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const container = document.getElementById('root')
+const root = createRoot(container)
 root.render(
   <StrictMode>
     <BrowserRouter>
@@ -16,4 +16,4 @@ root.render(
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>
-);
+)

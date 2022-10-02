@@ -8,6 +8,7 @@ export const Flex = styled.div`
 
   h1 {
     font-size: ${({ theme }) => theme.fsxl};
+    text-decoration: underline;
   }
 `
 
