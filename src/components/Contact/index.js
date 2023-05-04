@@ -14,7 +14,7 @@ const Contact = () => {
           <h2>Let's build something great.</h2>
           <ul>
             <li>
-              <a href='mailto:brandon@hazelton.dev' title='Email'>
+              <a href='mailto:hazeltonbw@gmail.com' title='Email'>
                 <FiMail size='2em' style={{ fill: '#272727' }} />
               </a>
             </li>
