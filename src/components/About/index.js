@@ -38,7 +38,7 @@ const About = () => {
             </a>
           </li>
           <li>
-            <a href='mailto:brandon@hazelton.dev' title='Email'>
+            <a href='mailto:hazeltonbw@gmail.com' title='Email'>
               <GoMail />
             </a>
           </li>
